@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>函数返回值</title>
+	<script type="text/javascript">
+		
+		function fnAdd(a, b){
+			var c = a + b;
+
+			// alert(c)
+			alert('函数内部c='+c);
+
+			// 返回c的值，并结束函数的运行，不管后面是否还有未执行的语句
+			return c;
+
+		}
+
+		var iResult = fnAdd(2, 5);
+
+		alert(iResult);
+
+	</script>
+</head>
+<body>
+	
+</body>
+</html>
