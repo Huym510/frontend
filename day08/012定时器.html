@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>定时器</title>
+	<script type="text/javascript">
+		function myalert(){
+			alert('hello javascript');
+
+		}
+
+		// 只执行一次的定时器;第一个参数是函数名或者匿名函数，第二个参数是时间，单位默认毫秒
+		// var timer01 = setTimeout(myalert, 2000);
+
+		// 关闭只执行一次的定时器
+		// clearTimeout(timer01);
+
+		// 反复执行的定时器
+		// var timer02 = setInterval(myalert,1000);
+
+		var timer03 =setInterval(function(){
+			alert('Nihao');
+		}, 2000)
+
+		// 关闭反复执行的定时器
+		// clearInterval(timer02);
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

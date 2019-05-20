@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>字符串的处理方法</title>
+	<script type="text/javascript">
+		
+		var iNum01 = 12;
+		var sNum02 = '24';
+		var sTr = 'abc';
+
+		// 数字和字符串相加，等同于字符串拼接
+		// alert(iNum01+sNum02);  // 弹出1224
+
+		// alert(sNum02+sTr); // 弹出24abc
+
+
+		var sTr02 = '12.35';
+		// 将字符串小数转化为整数
+		// alert(parseInt(sTr02));  // 弹出12
+
+		// 将字符串的小数转化为小数
+		// alert(parseFloat(sTr02));  // 弹出12.35
+
+		var sTr03 = '2017-05-20';
+		var aRr = sTr03.split('-');
+		// alert(aRr);  // 弹出[2017,5,20]
+
+		var aRr2 = sTr03.split("");
+		// alert(aRr2);  // 弹出[2,0,1,7,-,0,5,-,2,0]
+
+		var sTr04 = '#div';
+
+		// charAt截取某个下标的字符
+		var sTr05 = sTr04.charAt(0);
+		// alert(sTr05);  // 弹出#
+
+		var sTr06 ='abdgsgls microsofts  galsbsn';
+		var iNum03 = sTr06.indexOf('microsoft');
+		//alert(iNum03); // 存在弹出对应索引值： 9， 若不存在则弹出 -1
+
+		var sTr07 = 'abcdefg123456dfg';
+		var sTr08 = sTr07.substring(7,13);
+		var sTr09 = sTr04.substring(1);
+		//alert(sTr08);
+		//alert(sTr09);
+
+		var sTr10 = 'abcdef';
+		// alert(sTr10.toUpperCase()); // 大写
+
+		var sTr11 ='asdfg12jljhh09u8';
+		var sTr12 = sTr11.split('').reverse().join('');
+		alert(sTr12);
+
+	</script>
+</head>
+<body>
+	
+</body>
+</html>
