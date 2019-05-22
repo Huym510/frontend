@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jquery事件</title>
+	<script type="text/javascript" src='js/jquery-1.12.4.min.js'></script>
+	<script type="text/javascript">
+		$(function(){
+			$('#input01').focus(function(){
+				alert('获得焦点');
+			})
+		})
+	</script>
+</head>
+<body>
+	<form>
+	<input type="text" name="" id="input01">
+	<input type="text" name="" id="input02">
+	<input type="submit" name="" value='提交' id='sub'>
+	</form>
+</body>
+</html>
